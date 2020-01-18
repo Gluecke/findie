@@ -4,7 +4,7 @@
 
 Application for finding restauants on multile delivery sites.
 
-### Installing
+## Installing
 
 installing puppeteer will install a compatible version of chromium
 
