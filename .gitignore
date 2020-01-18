@@ -1,0 +1,5 @@
+# ignore pics
+*.png
+
+# ignorte node modules
+/node_modules/
