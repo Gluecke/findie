@@ -1,6 +1,6 @@
 # Findie
 
-> A restaurant delivery finder
+*A restaurant delivery finder*
 
 Application for finding restauants on multile delivery sites.
 
