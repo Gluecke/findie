@@ -22,7 +22,7 @@ app.get("/", async (req, res) => {
     const page = await context.newPage();
     await page.goto("https://google.com");
 
-    console.log("saying hi");
+    console.log("saying hello");
     await page.type("input", "hello natasha");
 
     console.log("snapping a pic");
