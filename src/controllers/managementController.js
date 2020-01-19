@@ -1,15 +1,11 @@
-const express = require("express");
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
-const app = express();
-const port = process.env.PORT || 8080;
-
-app.get("/", async (req, res) => {
+exports.test = async (req, res) => {
   console.log("started");
   const pngName = "goog-home.png";
 
-  let fp = (async () => {
+  await (async () => {
     const browser = await puppeteer.launch({
       defaultViewport: null,
       args: [
@@ -32,13 +28,9 @@ app.get("/", async (req, res) => {
     await browser.close();
   })();
 
-  await fp;
-
   res.set("Content-Type", "image/png");
 
   s = fs.createReadStream("./" + pngName);
 
   s.pipe(res);
-});
-
-app.listen(port, () => console.log(`App listening on port ${port}!`));
+};

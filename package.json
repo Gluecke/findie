@@ -2,7 +2,7 @@
   "name": "findie",
   "version": "0.0.1",
   "description": "finds restaurns on delivery sites",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon"
