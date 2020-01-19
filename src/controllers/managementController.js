@@ -19,7 +19,7 @@ exports.test = async (req, res) => {
     await page.goto("https://google.com");
 
     console.log("saying hello");
-    await page.type("input", "hello natasha");
+    await page.type("input", "hello google");
 
     console.log("snapping a pic");
     await page.screenshot({ path: pngName });
